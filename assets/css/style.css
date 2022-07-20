@@ -8,6 +8,7 @@ html{
     font-family: 'Lato', sans-serif;
 
 }
+/* common styles */
 body{
     text-decoration: none;
     background-color: #f5fdfd;
@@ -17,6 +18,8 @@ header{
     flex-direction: column;
     justify-content: center;
 }
+/* header section styles*/
+/* header container */
 .container{
     display: flex;
     justify-content: space-between;
@@ -77,6 +80,7 @@ button:hover{
     color: #fff;
     background-color: #2e3596;
 }
+/* section area styles */
 
 .sec_container{
     width: 1200px;
@@ -110,6 +114,7 @@ button:hover{
     padding: 15px 30px;
     display: flex;
     flex-direction: column;
+    height: 250px;
 }
 .side_menu #active{
     color: #fff;
@@ -203,7 +208,7 @@ button:hover{
 .blog_info span{
     margin-left: 5px;
 }
-
+/* footer section styles */
 footer{
     background-color: #700412;
 }
@@ -263,6 +268,7 @@ footer{
     color: rgb(233, 36, 1);
 }
 
+/* animations */
 @keyframes slider {
     0%{
         transform: translate(0, 10px);
