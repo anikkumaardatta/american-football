@@ -1,5 +1,22 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
+
+
+/* css variables */
+:root {
+    --main-bg-color: #f5fdfd;
+    --theme-color: #e00b28;
+    --footer-color: #700412;
+    --color-white: #ffffff;
+    --button-background: #2e3596;
+    --color-fb: #0d6eff;
+    --color-tw: #04afff;
+    --color-gl: #e92401;
+    --color-lite-gray: #504f4f;
+    --color-mid-black: #1d1d1d;
+    
+  }
+
 *{
     margin: 0;
 }
@@ -11,7 +28,7 @@ html{
 /* common styles */
 body{
     text-decoration: none;
-    background-color: #f5fdfd;
+    background-color: var(--main-bg-color);
 }
 header{
     display: flex;
@@ -28,7 +45,7 @@ header{
     height: 580px;
     border-radius: 30px;
     margin: 50px auto;
-    background-color: #e00b28;
+    background-color: var(--theme-color);
     overflow: hidden;
 }
 
@@ -38,14 +55,14 @@ header{
     margin: 50px 24px 50px 100px;
 }
 .page_title{
-    color: #fff;
+    color: var(--color-white);
     margin-bottom: 20px;
     font-size: 70px;
 }
 .page_para{
     margin-bottom: 20px;
     font-size: 16px;
-    color: #fff;
+    color: var(--color-white);
 }
 .img_area {
     z-index: 1000;
@@ -67,8 +84,8 @@ header{
 button{
     font-size: 20px;
     font-weight: 700;
-    color: #e00b28;
-    background-color: #fff;
+    color: var(--theme-color);
+    background-color: var(--color-white);
     padding: 15px 25px;
     border: 0;
     outline: none;
@@ -77,8 +94,8 @@ button{
     transition: 0.3s;
 }
 button:hover{
-    color: #fff;
-    background-color: #2e3596;
+    color: var(--color-white);
+    background-color: var(--button-background);
 }
 /* section area styles */
 
@@ -99,26 +116,26 @@ button:hover{
     text-decoration: none;
     font-size: 18px;
     font-weight: 700;
-    color: #fff;
-    background-color: #e00b28;
+    color: var(--color-white);
+    background-color: var(--theme-color);
     border-radius: 5px;
     transition: 0.3s;
     display: none;
 }.sec_container .view_btn:hover{
-    color: #fff;
-    background-color: #2e3596;
+    color: var(--color-white);
+    background-color: var(--button-background);
 }
 .side_menu{
     border-radius: 10px;
-    background-color: #e00b28;
+    background-color: var(--theme-color);
     padding: 15px 30px;
     display: flex;
     flex-direction: column;
     height: 250px;
 }
 .side_menu #active{
-    color: #fff;
-    background-color: #2e3596;
+    color: var(--color-white);
+    background-color: var(--button-background);
 }
 .side_menu a{
     padding: 15px 25px;
@@ -127,13 +144,13 @@ button:hover{
     text-decoration: none;
     font-size: 18px;
     font-weight: 700;
-    color: #e00b28;
-    background-color: #fff;
+    color: var(--theme-color);
+    background-color: var(--color-white);
     border-radius: 5px;
     transition: 0.3s;
 }.side_menu a:hover{
-    color: #fff;
-    background-color: #2e3596;
+    color: var(--color-white);
+    background-color: var(--button-background);
 }
 
 .blogs{
@@ -144,7 +161,7 @@ button:hover{
 .blog{
     overflow: hidden;
     border-radius: 10px;
-    background-color: #ffffff;
+    background-color: var(--color-white);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     border: 1px solid #e2e2e2;
     display: flex;
@@ -170,6 +187,12 @@ button:hover{
     margin-bottom: 20px;
     text-align: center;
 }
+.match_details h2{
+    font-size: 20px;
+}
+.match_details span{
+    font-size: 14px;
+}
 .blog .flag{
     width: 40%;
 }
@@ -178,29 +201,29 @@ button:hover{
 }
 .blog a{
     text-decoration: none;
-    color: #3d3d3d;
+    color: var(--color-lite-gray);
     font-size: 14PX;
     font-weight: 700;
     width: 30%;
     text-align: center;
     border-radius: 5PX;
-    border: 2px solid #504f4f;
+    border: 2px solid var(--color-lite-gray);
     padding: 5px 15px;
     transition: 0.3s;
 }.blog a:hover{
-    color: #ffffff;
-    background-color: #e00b28;
-    border: 2px solid #e00b28;
+    color: var(--color-white);
+    background-color: var(--theme-color);
+    border: 2px solid var(--theme-color);
 }
 .blog h2{
     margin: 25px 0;
     font-size: 20px;
-    color: #1d1d1d;
+    color: var(--color-mid-black);
 }
 .blog_info{
     display: flex;
     font-size: 14px;
-    color: #504f4f;
+    color: var(--color-lite-gray);
 }
 .blog_info .elaps{
     margin-right: 25px;
@@ -210,7 +233,7 @@ button:hover{
 }
 /* footer section styles */
 footer{
-    background-color: #700412;
+    background-color: var(--footer-color);
 }
 .footer_container{
     margin: 50px auto;
@@ -223,7 +246,7 @@ footer{
 }
 .footer_title{
     font-size: 50px;
-    color: #fff;
+    color: var(--color-white);
     text-align: center;
     width: 100%;
     margin-top: 50px;
@@ -239,33 +262,40 @@ footer{
 }
 .footer_links a{
     text-decoration: none;
-    color: #ffffffc2;
+    color: var(--color-white);
     padding: 5px 30px;
     margin-bottom: 50px;
     transition: all 0.3s;
+    opacity: .8;
 }.footer_links a:hover{
     text-decoration: underline;
-    color: #fff;
+    opacity: 1;
 }
 .social_icons{
     padding: 50px;
     margin-bottom: 25px;
+    display: flex;
 }
 .social_icons a{
     font-size: 25px;
     text-decoration: none;
-    color: #ffffffc2;
+    color: var(--color-white);
     padding: 10px 15px;
     border-radius: 50%;
     transition: all 0.3s;
+    opacity: .8;
 }.social_icons a:hover{
-    background-color: #fff;
+    opacity: 1;
+    background-color: var(--color-white);
 }.social_icons a:hover .fa-facebook-square{
-    color: rgb(13, 110, 255);
+    opacity: 1;
+    color: var(--color-fb);
 }.social_icons a:hover .fa-twitter-square{
-    color: rgb(4, 175, 255);
+    opacity: 1;
+    color: var(--color-tw);
 }.social_icons a:hover .fa-google-plus-square{
-    color: rgb(233, 36, 1);
+    opacity: 1;
+    color: var(--color-gl);
 }
 
 /* animations */
